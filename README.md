@@ -8,6 +8,12 @@ Enter into the terminal to log in if you aren't already
 psql --username=<USERNAME> --dbname=<DB_NAME>
 ```
 
+Example
+
+```
+psql --username=unknownmanok --dbname=first_database
+```
+
 Into database name, type this for see list of all database.
 
 ### Check list of databases
@@ -23,9 +29,9 @@ Result seems like this
 +-----------------+--------------+----------+---------+---------+-----------------------+
 |      Name       |    Owner     | Encoding | Collate |  Ctype  |   Access privileges   |
 +-----------------+--------------+----------+---------+---------+-----------------------+
-| first_database  | freecodecamp | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| first_database  | unknownmanok | UTF8     | C.UTF-8 | C.UTF-8 |                       |
 | postgres        | postgres     | UTF8     | C.UTF-8 | C.UTF-8 |                       |
-| second_database | freecodecamp | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| second_database | unknownmanok | UTF8     | C.UTF-8 | C.UTF-8 |                       |
 | template0       | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
 |                 |              |          |         |         | postgres=CTc/postgres |
 | template1       | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
@@ -60,3 +66,14 @@ CREATE TABLE table_name();
 \d
 ```
 
+See the console
+
+```
+               List of relations
++--------+-------------+-------+--------------+
+| Schema |    Name     | Type  |    Owner     |
++--------+-------------+-------+--------------+
+| public | first_table | table | unknownmanok |
++--------+-------------+-------+--------------+
+(1 row)
+```
