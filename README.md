@@ -83,3 +83,25 @@ See the console
 +--------+-------------+-------+--------------+
 (1 row)
 ```
+
+### See Details in The Table
+
+```
+\d table_name
+```
+
+Example
+
+```
+\d first_table
+```
+
+See result
+
+```
+           Table "public.first_table"
++--------+------+-----------+----------+---------+
+| Column | Type | Collation | Nullable | Default |
++--------+------+-----------+----------+---------+
++--------+------+-----------+----------+---------+
+```
