@@ -60,6 +60,12 @@ Do not forget `semi-colon (;)` if using SQL keyword.
 CREATE TABLE table_name();
 ```
 
+Example
+
+```
+CREATE TABLE first_table();
+```
+
 ### Check Tables listed in The Database
 
 ```
