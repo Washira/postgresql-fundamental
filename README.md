@@ -10,6 +10,8 @@ psql --username=<USERNAME> --dbname=<DB_NAME>
 
 Into database name, type this for see list of all database.
 
+### Check list of databases
+
 ```
 \l
 ```
@@ -17,8 +19,26 @@ Into database name, type this for see list of all database.
 ## Create Database
 
 ```
-CREATE DATABASE <DB_NAME>;
+CREATE DATABASE database_name;
 ```
 
-Do not forget `semi-colon (;)`.
+Do not forget `semi-colon (;)` if using SQL keyword.
+
+## Connect Other Database
+
+```
+\c other_database_name
+```
+
+## Create Table in The Database
+
+```
+CREATE TABLE table_name();
+```
+
+### Check Tables listed in The Database
+
+```
+\d
+```
 
